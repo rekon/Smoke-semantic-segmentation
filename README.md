@@ -1,4 +1,4 @@
-### Smoke detection via semantic segmentation using _Baseline U-Net model_ and image augmentation
+### Smoke detection via semantic segmentation using _Baseline U-Net model_ and image augmentation in Keras
 
 This repo is a partial implementation from [Kaggle](https://www.kaggle.com/kmader/baseline-u-net-model-part-1/)
 
@@ -15,3 +15,21 @@ _Architecture_
 _Image source: Computer Science Department of the University of Freiburg, Germany_
 
 ---
+
+In Kaggle Airbus ship detection challenge, [Kevin Mader](https://www.kaggle.com/kmader) has used this model starting with filter size 8, for detection of ships from 768x768 image. However I have used it on 'smoke images' obtained from Google search and resized them to 256x256.
+
+#### Images and corresponding annotations
+![Images](./overview.png "Images & annotations")
+
+#### Augmented images and corresponding annotations
+![Augmentations](./augmentations.png "Images & annotations")
+
+#### Results
+![Results](./predictions.png "Images & annotations")
+
+---
+
+### Scope of improvements
+- The dataset has around 400 images, adding more images to dataset can improve the accuracy
+- Proper annotation of smoke also affects the prediction of the model, maybe the annotations done in the dataset can be improved and it will surely improve accuracy
+- Impelementation of the original U-Net model can also improve accuracy
