@@ -12,8 +12,10 @@ Inspired by auto-encoders, LinkNet is an attempt to get accurate instance level 
 Generally, spatial information is lost in the encoder due to pooling or strided convolution is recovered by using the pooling indices or by full convolution. But LinkNet bypasses spatial information, directly from the encoder to the corresponding decoder improves accuracy along with significant decrease in processing time. In this way, information which would have been otherwise lost at each level of encoder is preserved, and no additional parameters and operations are wasted in relearning this lost information.
 
 ---
-_Architecture_
-![LinkNet architecture]( "./architecture.png LinkNet")
+#### _Architecture_
+
+![LinkNet architecture]( ./architecture.png "LinkNet")
+
 _Image source: [LinkNet](https://codeac29.github.io/projects/linknet/)_
 
 ---
@@ -23,8 +25,12 @@ In Kaggle _2018 Data Science Bowl_, [Kevin Mader](https://www.kaggle.com/kmader)
 #### Images and corresponding annotations
 ![Images](./overview.png "Images & annotations")
 
+---
+
 #### Augmented images and corresponding annotations
 ![Augmentations](./augmentations.png "Images & annotations")
+
+---
 
 #### Results
 ![Results](./predictions.png "Images & annotations")
